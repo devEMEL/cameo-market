@@ -13,7 +13,7 @@ const Faucet = () => {
   const providerRPC = {
     okpoko: {
       name: "onimisi",
-      rpc: "http://161.97.115.129:8545",
+      rpc: "https://froopyland-json.rpc.silknodes.io",
       chainId: 0x5232cb,
     },
   };
