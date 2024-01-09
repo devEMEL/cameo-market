@@ -29,7 +29,7 @@ import Home from "./components/Home";
 import Faucet from "./components/Faucet";
 const okpoko = {
   // id: 0x5232cb,
-  id: 5386955,
+  id: 100,
   name: "onimisi",
   network: "onimisi",
   iconUrl: "https://example.com/icon.svg",

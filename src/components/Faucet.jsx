@@ -14,9 +14,11 @@ const Faucet = () => {
     okpoko: {
       name: "onimisi",
       rpc: "https://froopyland-json.rpc.silknodes.io",
-      chainId: 0x5232cb,
+
+      chainId: 100,
     },
   };
+  // 0x5232cb
   // 173.249.25.82
   // devemel123.xyz
 
