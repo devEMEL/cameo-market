@@ -91,7 +91,7 @@ const AddProductModal = () => {
 
   // Define the JSX that will be rendered
   return (
-    <div className={"flex flex-row w-full justify-between"}>
+    <div className={"flex flex-row w-full justify-between text-[#000000]"}>
         {/* Add Product Button that opens the modal */}
         <div className="mt-20 flex ml-20">
           <button
