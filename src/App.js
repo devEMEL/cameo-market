@@ -13,6 +13,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Import three different wallets connectors from the RainbowKit package.
 //
 import { getDefaultWallets } from "@rainbow-me/rainbowkit";
+import { InjectedConnector } from "wagmi/connectors/injected";
+import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 // Import configureChains, createClient, and WagmiConfig from the Wagmi package to configure the Wagmi client.
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 
@@ -26,7 +28,8 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Faucet from "./components/Faucet";
 const okpoko = {
-  id: 0x5232cb,
+  // id: 0x5232cb,
+  id: 5386955,
   name: "onimisi",
   network: "onimisi",
   iconUrl: "https://example.com/icon.svg",
@@ -37,14 +40,14 @@ const okpoko = {
     symbol: "ONI",
   },
   rpcUrls: {
-    public: { http: ["http://161.97.115.129:8545"] },
-    default: { http: ["http://161.97.115.129:8545"] },
+    public: { http: ["https://froopyland-json.rpc.silknodes.io"] },
+    default: { http: ["https://froopyland-json.rpc.silknodes.io"] },
   },
-
+  // http://161.97.115.129:8545
   testnet: false,
 };
 // 173.249.25.82
-// devemel123.xyz 
+// devemel123.xyz
 const { provider, chains } = configureChains([okpoko], [publicProvider()]);
 
 const { connectors } = getDefaultWallets({
@@ -75,7 +78,6 @@ function App() {
               <Route path="/faucet" element={<Faucet />} />
             </Routes>
             {/* footer */}
-           
           </BrowserRouter>
         </RainbowKitProvider>
       </WagmiConfig>
